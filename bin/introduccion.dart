@@ -50,4 +50,18 @@ void main(List<String> arguments) {
     print("El numero es menor a 15");
   }
   
+  sumaDosNumeros(1, 2);
 }
+
+
+  int sumaDosNumeros(int numberOne, int numberTwo){
+    return numberOne + numberTwo;
+  }
+
+  String holaMundo(){
+    return "Hola mundo";
+  }
+
+  void funtion(){
+    
+  }
