@@ -1,7 +1,7 @@
 import 'dart:html';
 
 void main(List<String> arguments) {
-
+  /*
   String variableTexto = "Hola Mundo";
   int numeroEntero = 15;
   double numeroDouble = 3.7;
@@ -21,13 +21,14 @@ void main(List<String> arguments) {
   List<int> lista = [1,2,3,4,6,7,9];
 
   List<String> listaLetras = ["A","B","C","D","E"];
-
+  */
   //Comentarios de una sola linea
 
   /*
     Comentarios de varias lineas
   */
 
+  /*
   if (numeroEntero==15) {
     print("La variable es igual a 15");
   }else if(numeroEntero ==1){
@@ -51,6 +52,9 @@ void main(List<String> arguments) {
   }
   
   sumaDosNumeros(1, 2);
+  */
+  
+  print(fibonacci(9));
 }
 
 
@@ -63,5 +67,25 @@ void main(List<String> arguments) {
   }
 
   void funtion(){
+
+  }
+
+  int fibonacci(int posicion){
+  int anterior = 0;
+  int actual = 1;
+
+  switch (posicion) {
+    case 1:
+      return 0;
+    case 2:
+    return 1;
     
+  }
+   for (int i = 2; i < posicion; i++) {
+      int aux = actual;
+      actual = actual + anterior;
+      anterior = aux;
+    }
+    return actual;
+
   }
